@@ -1,10 +1,11 @@
-import ObjectComponent from "./utills/ObjectComponent";
+import CountrySearch from "./utills/CountrySearch";
 
 function App() {
   return (
     <div className="App">
       {/* <Timer /> */}
-      <ObjectComponent />
+      {/* <ObjectComponent /> */}
+      <CountrySearch />
     </div>
   );
 }
