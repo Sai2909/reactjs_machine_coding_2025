@@ -1,11 +1,12 @@
-import CountrySearch from "./utills/CountrySearch";
+import EventsComponent from "./utills/EventsComponent";
 
 function App() {
   return (
     <div className="App">
       {/* <Timer /> */}
       {/* <ObjectComponent /> */}
-      <CountrySearch />
+      {/* <CountrySearch /> */}
+      <EventsComponent />
     </div>
   );
 }
