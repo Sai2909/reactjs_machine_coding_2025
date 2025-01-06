@@ -1,10 +1,10 @@
-import FetchingData from "./fetching_coding/FetchData";
+import Comments from "./comments_coding/Comments";
 
 
 function App() {
   return (
     <div className="App">
-      <FetchingData />
+      <Comments />
     </div>
   );
 }
