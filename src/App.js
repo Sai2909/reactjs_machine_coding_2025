@@ -1,12 +1,10 @@
-import EventsComponent from "./utills/EventsComponent";
+import FetchingData from "./fetching_coding/FetchData";
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Timer /> */}
-      {/* <ObjectComponent /> */}
-      {/* <CountrySearch /> */}
-      <EventsComponent />
+      <FetchingData />
     </div>
   );
 }
