@@ -1,10 +1,10 @@
-import ClassesUsestate from "./hooks/usestate/ClassesUsestate";
+import SuggetionList from "./autosuggetion/SuggetionList";
 
 
 function App() {
   return (
     <div className="App">
-      <ClassesUsestate />
+      <SuggetionList />
     </div>
   );
 }
