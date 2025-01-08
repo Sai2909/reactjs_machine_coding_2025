@@ -1,0 +1,30 @@
+=>useState is a function provided by React that "returns a stateful variable" and a "function to update that variable".
+=> It’s used to manage the component’s internal state, allowing for dynamic and interactive behavior.
+
+Syntax and Usage:
+=>useState involves calling the hook with an initial state value.It returns an array with two elements: the current state and a function to update the state.
+const [state, setState] = useState(initialState);
+*state: The current state variable. It holds the current value of the state.
+*setState: A function that updates the state. Calling setState with a new value re-renders the component with the updated state.
+
+Functional Updates:
+If you need to update state based on the previous state, it’s best to use the functional form of setState. This approach avoids potential issues with stale state, especially in asynchronous environments.
+     const increment = () => {
+  setCount((prevCount) => prevCount + 1);
+};
+
+=>useState is one of the "fundamental React Hook" that allows "functional components" to have "stateful behavior". 
+=>Before the introduction of React Hooks, state management was limited to "class-based components",where state was managed using this.state
+and updated with this.setState().   
+=>useState brings this "capability" to "functional components".
+
+
+Common use cases:
+Managing Component State:   useState is used for managing simple state in functional components, such as form inputs, counters, toggles, or simple arrays and objects.
+Conditional Rendering: useState allows you to conditionally render content based on the current state.
+Dynamic Styles and Classes: State changes can be used to update styles, classes.
+
+resource:
+https://akcoding.com/react-hooks-interview-questions/#1-use-state
+https://react.dev/reference/react/useState#usage
+https://www.book2s.com/tutorials/react-js-hooks.html#useState
