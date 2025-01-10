@@ -1,10 +1,10 @@
-import SuggetionList from "./autosuggetion/SuggetionList";
+import FetchingDependency from "./hooks/useeffect/FetchingDependency";
 
 
 function App() {
   return (
     <div className="App">
-      <SuggetionList />
+      <FetchingDependency />
     </div>
   );
 }

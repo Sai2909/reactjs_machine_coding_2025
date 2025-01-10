@@ -1,0 +1,35 @@
+=>The useEffect hook is a "fundamental" React Hook "used to manage side effects within functional components".
+=>Side effects are operations that affect something outside the scope of the current function, such as fetching data, updating the DOM.
+=> Before Hooks, class-based components used lifecycle methods to handle side effects, like componentDidMount, componentDidUpdate, and componentWillUnmount. 
+With useEffect, functional components can manage side effects in a unified way.
+
+Purpose of useEffect:
+Data Fetching: Making network requests to fetch data from APIs or databases.
+Event Handling: Subscribing to DOM events or custom events within the application.
+Timers and Intervals: Setting up timers or intervals to perform periodic tasks.
+Updating External Resources: Modifying browser document properties, like title or focus, or interacting with third-party libraries.
+
+how it works:
+=>useEffect takes a function as its first argument, representing the side effect to be executed.
+=>optional dependency array as its second argument.which controls when the effect runs.
+=>If the dependency array is empty, the effect runs only once when the component is mounted.
+=>it contains variables, the effect runs whenever those variables change.
+=>The dependency array is a key concept in useEffect. It determines when the effect should re-run, allowing you to control side effects and avoid unintended behavior.
+
+=>Empty Array ([]): The effect runs once when the component is mounted and does not re-run on updates. 
+This is equivalent to componentDidMount.
+=>Array with Dependencies: The effect runs on mount and re-runs whenever the specified dependencies change. 
+This is equivalent to componentDidUpdate.
+=>No Array: The effect runs on every render, potentially leading to performance issues or infinite loops. 
+
+Why is the Dependency Array Important in useEffect?
+Control Over Effect Execution:
+================================
+The dependency array allows you to specify when the useEffect should run or re-run. 
+This control helps you manage side effects efficiently and avoid unnecessary re-renders, which can lead to performance issues or infinite loops.
+Empty Array ([]): If the dependency array is empty, the useEffect runs once when the component is mounted. This behavior is similar to componentDidMount in class-based components.
+Specified Dependencies: If the array contains specific variables, the effect re-runs only when those variables change. This allows you to manage side effects based on specific conditions, similar to componentDidUpdate.
+
+Avoiding Infinite Loops:
+When the dependency array is missing, the useEffect function runs on every render.
+This behavior can easily lead to infinite loops if the effect itself triggers a state change, causing a re-render and another useEffect execution. 
