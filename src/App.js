@@ -1,10 +1,10 @@
-import FetchingDependency from "./hooks/useeffect/FetchingDependency";
+import DragPerson from "./draggable/DragPerson";
 
 
 function App() {
   return (
     <div className="App">
-      <FetchingDependency />
+      <DragPerson />
     </div>
   );
 }
