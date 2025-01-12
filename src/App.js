@@ -1,12 +1,15 @@
-import DragPerson from "./draggable/DragPerson";
+import ThemeContext from "./hooks/usecontext/theme/ThemeContext";
 
 
 function App() {
   return (
     <div className="App">
-      <DragPerson />
+      <ThemeContext />
     </div>
   );
 }
 
 export default App;
+
+
+
