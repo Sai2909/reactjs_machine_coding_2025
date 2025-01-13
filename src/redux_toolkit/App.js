@@ -12,3 +12,8 @@ const ReduxToolkit = () => {
 }
 
 export default ReduxToolkit
+
+/*
+Refer:
+https://blank.hashnode.dev/getting-started-with-redux-toolkit-a-beginners-guide?ref=dailydev 
+*/
