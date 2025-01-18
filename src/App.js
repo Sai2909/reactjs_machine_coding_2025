@@ -1,10 +1,10 @@
-import UserReducerCount from "./hooks/usereducer/UserReducerCount";
+import FetchingReducer from "./hooks/usereducer/FetchingReducer";
 
 
 function App() {
   return (
     <div className="App">
-      <UserReducerCount />
+      <FetchingReducer />
     </div>
   );
 }

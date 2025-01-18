@@ -9,4 +9,15 @@ const[state,dispatch]=useReducer(reducer,initialState);
 
 reducer: A "function" that "takes the current state" and an "action", and "returns" the "new state".
 initialState: The "initial value of the state".
+state: The current state.
+dispatch: A function used to send actions to the reducer.
+
+when to use:
+-Complex state logic: When state transitions are complex and involve multiple sub-values
+-Centralized state updates: When multiple components need to update the same state.
+
+
+what diff b/w useReducer amd usestate?
+-useReducer is a hook used for "managing complex state logic" in React. While useState is suitable for "simple state updates".
+-useReducer is more powerful for handling "state transitions that involve multiple actions".
 
