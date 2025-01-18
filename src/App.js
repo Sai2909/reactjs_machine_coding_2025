@@ -1,10 +1,10 @@
-import ReduxToolkit from "./redux_toolkit/App";
+import UserReducerCount from "./hooks/usereducer/UserReducerCount";
 
 
 function App() {
   return (
     <div className="App">
-      <ReduxToolkit />
+      <UserReducerCount />
     </div>
   );
 }

@@ -1,0 +1,12 @@
+-useReducer is a React Hook that provides an alternative way to "manage state" in functional components,
+-especially when the "state logic" is "complex" or "involves multiple sub-values". It is conceptually similar to reducers in Redux.
+
+syntax:
+-useReducer hook accepts two arguments: a "reducer function" and an "initial state".
+- It "returns" the "current state" and a "dispatch function" to "trigger state changes".
+
+const[state,dispatch]=useReducer(reducer,initialState);
+
+reducer: A "function" that "takes the current state" and an "action", and "returns" the "new state".
+initialState: The "initial value of the state".
+
