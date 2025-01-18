@@ -1,5 +1,11 @@
 import React, { useEffect, useReducer } from 'react'
 
+
+/*
+To handle side effects with useReducer, I would use the useEffect hook. For example,
+ if I need to fetch data when a component mounts or when certain actions are dispatched, 
+ I can use useEffect to trigger those side effects and then use the dispatch function to update the state based on the results.
+*/
 const intialState = {
     data: null,
     loading: true,

@@ -1,10 +1,10 @@
-import FetchingReducer from "./hooks/usereducer/FetchingReducer";
+import TodoUsereducer from "./hooks/usereducer/TodoUsereducer";
 
 
 function App() {
   return (
     <div className="App">
-      <FetchingReducer />
+      <TodoUsereducer />
     </div>
   );
 }
