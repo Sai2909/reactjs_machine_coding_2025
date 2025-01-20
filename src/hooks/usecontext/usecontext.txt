@@ -1,0 +1,53 @@
+useContext hook is a part of "React’s Hooks" that allows you to access the context in a functional component.
+-"Context" provides a way to "share values" between "components without" having to "pass props manually "through "every level of the component tree".
+- This can be particularly useful for themes, user authentication, global settings, and more.
+
+WHy:
+When your application requires a "certain value" or "state to be accessible by many components", 
+passing "props" down "the component tree" can lead to “prop drilling.” 
+Prop drilling makes the "code harder to maintain and understand". 
+useContext helps to "avoid this by providing a way to pass data through the component tree" without manually passing props at every level.
+
+1.create context::
+create a context using React.createContext. This context will hold the value you want to "share across your components".
+import React, { createContext } from 'react';
+
+const UserContext = createContext();
+
+2.Provide the Context Value
+Use the MyContext.Provider component to" provide the context value to its children".
+Place this "provider at the top level of the component tree" where you want the "context to be available".
+
+//useContext React
+
+function Component1() {
+  const [user, setUser] = useState("Jesse Hall");
+
+  return (
+    <UserContext.Provider value={user}>
+      <h1>{`Hello ${user}!`}</h1>
+      <Component2 user={user} />
+    </MyContext.Provider>
+  );
+}
+
+
+3.Consume the Context Value::
+useContext hook to consume the context value in any functional component.
+
+import { useState, createContext, useContext } from "react";
+function Component5() {
+  const user = useContext(UserContext);
+
+  return (
+    <>
+      <h1>Component 5</h1>
+      <h2>{`Hello ${user} again!`}</h2>
+    </>
+  );
+}
+
+benfits::
+Simplifies State Management: Reduces the need for prop drilling by providing a direct way to pass data through the component tree.
+Improves Code Readability: Makes the code cleaner and easier to understand by centralizing the state logic.
+Encourages Reusability: Contexts can be reused across different parts of the application, promoting code reuse and consistency.

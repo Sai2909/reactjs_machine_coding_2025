@@ -1,0 +1,16 @@
+-useRef is a React hook that returns a "mutable ref object" that persists across renders.
+-and "allows you to access "the "DOM nodes" or "values of other elements".
+-.current property is initialized to the passed argument (initialValue).
+-This ref object persists throughout the lifetime of the component, enabling you to store and maintain references to DOM elements 
+or any other mutable value.
+-useRef can also be used to "store mutable values that persist across renders" without "causing re-renders".
+-Using useRef can help "avoid unnecessary re-renders", which can be "crucial for performance optimization".
+-if you need to keep a value "that should not cause re-renders" when "updated, useRef is the perfect tool".
+-useRef can also be used to access "previous props or state values", 
+which is particularly useful in scenarios where you need to compare current and previous values.
+
+
+usestate & useref :
+useRef returns a mutable object that does not trigger re-renders when updated, 
+while useState returns a state value and a function to update it, which causes the component to re-render.
+

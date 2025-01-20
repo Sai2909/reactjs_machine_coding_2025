@@ -1,10 +1,10 @@
-import TodoUsereducer from "./hooks/usereducer/TodoUsereducer";
+import RenderCounter from "./hooks/useref/CountRendering";
 
 
 function App() {
   return (
     <div className="App">
-      <TodoUsereducer />
+      <RenderCounter />
     </div>
   );
 }
