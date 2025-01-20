@@ -1,0 +1,28 @@
+-React is a powerful library for building user interfaces, 
+-but as your application grows, so can its complexity and performance issues.
+- One of the tools React provides to help manage performance is the useMemo hook.
+- useMemo is a React hook that allows you to "memoize expensive computations".
+-Memoization is an optimization technique where the result of a function call is cached and returned when the same inputs occur again,
+ instead of recalculating the result.
+ -This can significantly "improve the performance of your React application" by "preventing unnecessary calculations on every render".
+ 
+
+
+ useMemo is a React hook that memoizes the result of a computation, recomputing it only when its dependencies change. 
+  This helps in optimizing performance by avoiding expensive calculations on every render.
+ -take two arguments:
+ -A function that returns the "value" you "want to memoize".
+ -An "array of dependencies" that "determines" when the "memoized value should be changed".
+ 
+ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+computeExpensiveValue is only re-executed when either a or b changes.
+
+when to use useMemo:
+Expensive Calculations:
+ your component performs expensive calculations, memoizing the result can save on computation time and improve performance.
+
+
+
+ useMemo memoizes the" result of a function", while useCallback memoizes "the function itself". 
+ useMemo returns a "cached value", whereas useCallback returns a "cached version of the function"
+

@@ -1,10 +1,10 @@
-import RenderCounter from "./hooks/useref/CountRendering";
+import ExpensiveCal from "./hooks/usememo/ExpensiveCal";
 
 
 function App() {
   return (
     <div className="App">
-      <RenderCounter />
+      <ExpensiveCal />
     </div>
   );
 }
