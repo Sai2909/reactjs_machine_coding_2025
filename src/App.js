@@ -1,10 +1,10 @@
-import ParentUseCallback from "./hooks/usecallback/ParentUseCallback";
+import Throttling from "./debounce/ThrotlingRequest";
 
 
 function App() {
   return (
     <div className="App">
-      <ParentUseCallback />
+      <Throttling />
     </div>
   );
 }
