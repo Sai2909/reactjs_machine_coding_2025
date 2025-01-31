@@ -1,10 +1,10 @@
-import Throttling from "./debounce/ThrotlingRequest";
+import Tasks from "./30-tasks/Tasks";
 
 
 function App() {
   return (
     <div className="App">
-      <Throttling />
+      <Tasks />
     </div>
   );
 }
