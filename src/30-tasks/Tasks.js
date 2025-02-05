@@ -1,4 +1,5 @@
 import React from 'react'
+import { FAQAccordionExample } from './Accordian'
 
 const Tasks = () => {
     return (
@@ -8,6 +9,7 @@ const Tasks = () => {
             {/* <RandomNumberInBetween /> */}
             {/* <PoolingSystem /> */}
             {/* <SelectAllCheckbox /> */}
+            <FAQAccordionExample/>
         </div>
     )
 }
