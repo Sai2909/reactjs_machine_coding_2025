@@ -1,10 +1,9 @@
-import Tasks from "./30-tasks/Tasks";
-
+import Main from "./akshaysaini_machine_coding/tabs/Main";
 
 function App() {
   return (
     <div className="App">
-      <Tasks />
+      <Main />
     </div>
   );
 }
