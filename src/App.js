@@ -1,10 +1,10 @@
 
-import CustomDebounce from "./debounce/CustomDebounce";
+import CopyTextApi from "./copytext/CopyTextApi";
 
 function App() {
   return (
     <div className="App">
-      < CustomDebounce />
+      < CopyTextApi />
     </div>
   );
 }
