@@ -1,11 +1,10 @@
-// import Tasks from "./30-tasks/Tasks";
-// import Controlled from "./controlledUncontrolled/Controlled";
-import Uncontrolled from "./controlledUncontrolled/Uncontrolled";
+
+import ViewHoc from "./hoc/dataFetchingHoc/ViewHoc";
 
 function App() {
   return (
     <div className="App">
-      <Uncontrolled />
+      < ViewHoc />
     </div>
   );
 }
