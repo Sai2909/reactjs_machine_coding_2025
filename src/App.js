@@ -1,10 +1,10 @@
 
-import ViewHoc from "./hoc/dataFetchingHoc/ViewHoc";
+import CustomDebounce from "./debounce/CustomDebounce";
 
 function App() {
   return (
     <div className="App">
-      < ViewHoc />
+      < CustomDebounce />
     </div>
   );
 }
