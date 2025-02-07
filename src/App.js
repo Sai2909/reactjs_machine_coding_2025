@@ -1,10 +1,11 @@
 
-import CopyTextApi from "./copytext/CopyTextApi";
+// import FocusInput from "./focus/FocusInput";
+import Context from "./usecontext/UseContextComonent";
 
 function App() {
   return (
     <div className="App">
-      < CopyTextApi />
+      < Context />
     </div>
   );
 }
