@@ -1,10 +1,10 @@
 
-import DropDownref from "./dropdown_ref/DropDownref";
+import LiftingStateUp from "./lifting_state_up/LiftingStateUp";
 
 function App() {
   return (
     <div className="App" >
-      < DropDownref />
+      < LiftingStateUp />
     </div>
   );
 }
