@@ -1,10 +1,10 @@
 
-import ImpureFunction from "./pure_impure_function/ImpureFunction";
+import AddHubby from "./guess_the_output/AddHubby";
 
 function App() {
   return (
     <div className="App">
-      < ImpureFunction />
+      < AddHubby />
     </div>
   );
 }
