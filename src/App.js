@@ -1,11 +1,11 @@
 
 // import FocusInput from "./focus/FocusInput";
-import Context from "./usecontext/UseContextComonent";
+import Crud from "./crud/Crud";
 
 function App() {
   return (
     <div className="App">
-      < Context />
+      < Crud />
     </div>
   );
 }
