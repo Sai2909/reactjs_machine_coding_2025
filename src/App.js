@@ -1,10 +1,10 @@
 
-import LiftingStateUp from "./lifting_state_up/LiftingStateUp";
+import FetchForm from "./fetch_form_required/FetchForm";
 
 function App() {
   return (
     <div className="App" >
-      < LiftingStateUp />
+      < FetchForm />
     </div>
   );
 }
