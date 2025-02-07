@@ -1,10 +1,10 @@
 
-import Mycount from "./custom_hooks/counter_custom/Mycount";
+import ImpureFunction from "./pure_impure_function/ImpureFunction";
 
 function App() {
   return (
     <div className="App">
-      < Mycount />
+      < ImpureFunction />
     </div>
   );
 }
