@@ -6,13 +6,14 @@ const useDarkMode = () => {
     )
 
 
+
     const togleDarkMode = () => {
         setisdarkMode((prevState) => {
-            localStorage.setItem('isdarkMode', !prevState);
-            return !prevState
-        })
-    }
-
+            const newMode = !prevState;
+            localStorage.setItem("isdarkMode", newMode.toString()); // Store as string
+            return newMode;
+        });
+    };
     return { isdarMode, togleDarkMode }
 }
 
