@@ -1,11 +1,10 @@
 
-// import FocusInput from "./focus/FocusInput";
-import Crud from "./crud/Crud";
+import Mycount from "./custom_hooks/counter_custom/Mycount";
 
 function App() {
   return (
     <div className="App">
-      < Crud />
+      < Mycount />
     </div>
   );
 }
