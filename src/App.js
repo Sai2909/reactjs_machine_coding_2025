@@ -1,10 +1,10 @@
 
-import AddHubby from "./guess_the_output/AddHubby";
+import Theam from "./custom_hooks/darkmode/Theam";
 
 function App() {
   return (
-    <div className="App">
-      < AddHubby />
+    <div className="App" >
+      < Theam />
     </div>
   );
 }
