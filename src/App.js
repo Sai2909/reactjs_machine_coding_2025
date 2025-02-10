@@ -1,10 +1,10 @@
 
-import LocalStorage from "./local_storage/LocalStorage";
+import SessionStorage from "./session_storage/SessionStorage";
 
 function App() {
   return (
     <div className="App" >
-      < LocalStorage />
+      < SessionStorage />
     </div>
   );
 }
