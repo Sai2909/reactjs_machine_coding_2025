@@ -1,10 +1,10 @@
 
-import SessionStorage from "./session_storage/SessionStorage";
+import Cache from "./cache/Cache";
 
 function App() {
   return (
     <div className="App" >
-      < SessionStorage />
+      < Cache />
     </div>
   );
 }
