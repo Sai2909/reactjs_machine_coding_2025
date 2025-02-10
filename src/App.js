@@ -1,10 +1,10 @@
 
-import FetchForm from "./fetch_form_required/FetchForm";
+import ControlledInput from "./controlledInput/ControlledInput";
 
 function App() {
   return (
     <div className="App" >
-      < FetchForm />
+      < ControlledInput />
     </div>
   );
 }
