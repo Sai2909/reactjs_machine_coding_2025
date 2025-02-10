@@ -1,10 +1,10 @@
 
-import Rendering from "./dynamic_nested_listing/Rendering";
+import AsyncDataFetching from "./async_data_fetching/AsyncDataFetching";
 
 function App() {
   return (
     <div className="App" >
-      < Rendering />
+      < AsyncDataFetching />
     </div>
   );
 }
