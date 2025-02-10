@@ -1,10 +1,10 @@
 
-import Cache from "./cache/Cache";
+import TagInputAdd from "./30-tasks/TagInputAdd";
 
 function App() {
   return (
     <div className="App" >
-      < Cache />
+      < TagInputAdd />
     </div>
   );
 }
