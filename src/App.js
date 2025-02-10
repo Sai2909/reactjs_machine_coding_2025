@@ -1,10 +1,10 @@
 
-import AsyncDataFetching from "./async_data_fetching/AsyncDataFetching";
+import LocalStorage from "./local_storage/LocalStorage";
 
 function App() {
   return (
     <div className="App" >
-      < AsyncDataFetching />
+      < LocalStorage />
     </div>
   );
 }
