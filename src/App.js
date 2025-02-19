@@ -1,10 +1,10 @@
 
-import TagInputAdd from "./30-tasks/TagInputAdd";
+import Validation from "./form_validation/Validation";
 
 function App() {
   return (
     <div className="App" >
-      < TagInputAdd />
+      < Validation />
     </div>
   );
 }
