@@ -7,11 +7,12 @@ import Settings from './Settings'
 
 const TabForm = () => {
     const [data, setData] = useState({
-        name: "saikiran",
+        name: "",
         age: 24,
-        email: "saikiranmanchala2000@gmail.com",
+        email: " ",
         intrests: ["coding", "cricket"],
-        theame: "dark"
+        theame: "dark",
+        countrys: ["india", "Pakisthan", "Australia", "South Africa"]
     })
 
     const [activeTab, setActiveTab] = useState(0)
@@ -32,8 +33,11 @@ const TabForm = () => {
                 if (!data.age || data.age.length < 2) {
                     err.age = "Age is not valid"
                 }
+                if (!data.countrys) {
+                    err.countrys = "country is mandatroy"
+                }
                 setError(err)
-                return err.name || err.email || err.age ? false : true
+                return err.name || err.email || err.age || err.countrys ? false : true
             }
         },
         {

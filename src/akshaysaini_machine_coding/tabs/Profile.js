@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Profile = ({ data, setData, error }) => {
-    const { name, email, age } = data;
+    const { name, email, age, countrys } = data;
 
     const handleChange = (e, item) => {
         setData((prevData) => (
@@ -12,6 +12,8 @@ const Profile = ({ data, setData, error }) => {
             }
         ))
     }
+
+
     return (
         <div>
             <div>
@@ -29,6 +31,17 @@ const Profile = ({ data, setData, error }) => {
                 <label>Age:</label>
                 <input type="number" value={age} onChange={(e) => handleChange(e, "age")} />
                 {error.age && <span className='error'>{error.age}</span>}
+
+            </div>
+            <div>
+                <label>Select Country:</label>
+                <select value={data.country || ""} onChange={(e) => handleChange(e, "country")}>
+                    {countrys.map((country, index) => (
+                        <option key={index}>{country}</option>
+
+                    ))}
+                </select>
+                {error.countrys && <span className='error'>{error.countrys}</span>}
 
             </div>
         </div>

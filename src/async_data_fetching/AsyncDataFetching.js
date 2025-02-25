@@ -12,7 +12,6 @@ const AsyncDataFetching = () => {
                 const result = await response.json()
                 //after 2 seconds
                 setTimeout(() => {
-
                     setLoading(false)
                     setData(result)
                 }, 2000)
