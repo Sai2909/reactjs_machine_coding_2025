@@ -1,0 +1,10 @@
+=>Th contextapi in react, coupled with the usecontext hook, provides way to share data or state across multiple components
+=>without laying on prop drilling.
+=>Prop drilling refers to the practice of passing props through multiple levels of components which can become difficult to maintain in large or complex applications
+Benfits of contextapi
+=>Reduced Prop drilling
+=>Simplified component structure
+Prop drilling complicates the component structure, making it harder to track where data is coming from and leading to code
+that is more challenging to maintain. With the Context API, you can provide data at a high level and access it from any component, simplifying the structure.
+=>Easier Maintenance and Scalability
+=>Centralized State Management

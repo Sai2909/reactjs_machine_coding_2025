@@ -33,3 +33,5 @@ Specified Dependencies: If the array contains specific variables, the effect re-
 Avoiding Infinite Loops:
 When the dependency array is missing, the useEffect function runs on every render.
 This behavior can easily lead to infinite loops if the effect itself triggers a state change, causing a re-render and another useEffect execution. 
+
+

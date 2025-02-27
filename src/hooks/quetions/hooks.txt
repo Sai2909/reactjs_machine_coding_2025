@@ -1,0 +1,20 @@
+1.usestate and useReducer
+*Complexity of State Logic*
+=>useState is ideal for simple state management, where the state transitions are straightforward.
+=>useReducer is designed for more complex state logic, especially when multiple state variables are involved 
+or when state transitions require more intricate logic.
+*State update*
+=>useState allows you to update state by calling a state update function directly.
+=>useReducer uses a dispatch-action pattern, where you send actions to the reducer to trigger state transitions.
+
+2.useMemo useCallback
+=>useMemo and useCallback are both React Hooks used to optimize component performance through memoization.
+useMemo
+Purpose: useMemo is used to memoize a computed value, ensuring it is only recalculated when its dependencies change. This helps avoid unnecessary recomputations, improving performance in React components with expensive calculations.
+Usage: It is typically used when you have a complex or resource-intensive computation that should be cached and reused during re-renders.
+Dependencies: It accepts a dependency array, and the computed value is recalculated only when one or more dependencies change.
+
+useCallback
+Purpose: useCallback is used to memoize a function, ensuring that it doesn’t change across re-renders unless its dependencies change. This is useful when passing callbacks to child components to avoid triggering unnecessary re-renders.
+Usage: It is typically used when you need to pass a stable function reference to child components or to maintain the same function instance across re-renders.
+Dependencies: It also accepts a dependency array, and the memoized function is recreated only when the dependencies change.

@@ -1,10 +1,10 @@
 
-import TabForm from "./akshaysaini_machine_coding/tabs/TabForm";
+import ParentComponent from "./hooks/quetions/Callback";
 
 function App() {
   return (
     <div className="App" >
-      < TabForm />
+      < ParentComponent />
     </div>
   );
 }

@@ -26,3 +26,29 @@ Expensive Calculations:
  useMemo memoizes the" result of a function", while useCallback memoizes "the function itself". 
  useMemo returns a "cached value", whereas useCallback returns a "cached version of the function"
 
+ how does improve useMemo:
+ =>Avoids Redundant Computations
+ useMemo allows you to cache the result of an expensive computation. This means that the computation is only performed
+  when its dependencies change, reducing unnecessary recalculations during re-renders.
+=>Improves Component Re-render Efficiency
+caching computed values, useMemo can reduce the computational workload during component re-renders. 
+This is particularly important in scenarios where components re-render frequently, such as when managing state changes or responding to user interactions.
+ 
+ 
+ import React, { useMemo } from 'react';
+
+  const FilteredList = ({ items, searchTerm }) => {
+    const filteredItems = useMemo(() => {
+      return items.filter((item) => item.name.includes(searchTerm));
+    }, [items, searchTerm]); // Recompute only when 'items' or 'searchTerm' changes
+
+    return (
+      <ul>
+        {filteredItems.map((item) => (
+          <li key={item.id}>{item.name}</li>
+        ))}
+      </ul>
+    );
+  };
+
+=>
